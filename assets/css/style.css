@@ -2,10 +2,38 @@ html{
     text-align: center;
 }
 
+.vertical-margin{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 #game-area{
-    height:200px;
-    width:50%;
+    height:300px;
+    width:30%;
     margin:auto;
+    background-color: grey;
+}
+
+.colour-button{
+    width:30%;
+    height:42%;
+    margin:10px;
     display:inline;
+}
+
+#red-button{
+    background-color: red;
+}
+
+#blue-button{
+    background-color:blue;
+}
+
+#green-button{
+    background-color:green;
+}
+
+#yellow-button{
+    background-color:yellow;
 }
 
