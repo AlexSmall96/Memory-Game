@@ -4,20 +4,27 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function runGame(){
-    alert('You clicked go!');
+    //first add event listeners to each colour button//
+    let colourButtons=document.getElementsByClassName('colour-button');
+    for (let button of colourButtons){
+        button.addEventListener('click',function(){
+           let colour=this.Id;
+           console.log(colour);
+        })
+    }
+    
 }
 
 /**
- * Randomly creates an array of length n, consisting of numbers 1-4, 
- * representing colours red, blue, green, yellow
- * 
+ * Creates an array of length n, consisting of randomly chosen numbers from 1 to 4, 
+ * representing colours red, blue, green, yellow.
  */
 function createSequence(n){
-    sequence = [];
+    correctSequence = [];
     for (let i=0;i<n;i++){
-        sequence.push(Math.floor(4*Math.random())+1);
+        correctSequence.push(Math.floor(4*Math.random())+1);
     }
-    return sequence;
+    return correctSequence;
 }
 
 function compareSequence(){
