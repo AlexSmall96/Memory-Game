@@ -7,8 +7,17 @@ function runGame(){
     alert('You clicked go!');
 }
 
-function createSequence(){
-    
+/**
+ * Randomly creates an array of length n, consisting of numbers 1-4, 
+ * representing colours red, blue, green, yellow
+ * 
+ */
+function createSequence(n){
+    sequence = [];
+    for (let i=0;i<n;i++){
+        sequence.push(Math.floor(4*Math.random())+1);
+    }
+    return sequence;
 }
 
 function compareSequence(){
