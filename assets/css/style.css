@@ -1,0 +1,11 @@
+html{
+    text-align: center;
+}
+
+#game-area{
+    height:200px;
+    width:50%;
+    margin:auto;
+    display:inline;
+}
+
